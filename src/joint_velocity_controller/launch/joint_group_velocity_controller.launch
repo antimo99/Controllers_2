@@ -1,6 +1,6 @@
 <?xml version="1.0" ?> 
 <launch> 
-  <include file="$(find franka_control)/launch/franka_control.launch" pass_all_args="true"/> 
+  <include file="$(find franka_control)/launch/franka_control.launch" pass_all_args="false"/> 
     <arg name="robot_ip" value="10.224.20.198"/> 
     <arg name="load_gripper" value="false"/> 
     <arg name="arm_id" value="panda"/> 

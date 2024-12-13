@@ -7,8 +7,8 @@
   
   <rosparam command="load" file="$(find joint_velocity_controller)/config/joint_group_velocity_controller.yaml" subst_value="true" /> 
   <node name="controller_spawner" pkg="controller_manager" type="spawner" respawn="false" output="screen"  args="joint_group_velocity_controller">
-    <params name="robot_ip" value="$(arg robot_ip)"
-    <params name="load_gripper" value=$(arg load_gripper)"
+    <param name="robot_ip" value="$(arg robot_ip)"
+    <param name="load_gripper" value=$(arg load_gripper)"
   </node>
     
   
